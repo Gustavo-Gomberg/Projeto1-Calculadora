@@ -20,50 +20,31 @@ namespace Calculadora
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
-        {
-        }
+        {}
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {}
 
-        //BOTAO DOS NUMEROS 0 AO 9
+        //BOTAO DOS NUMEROS 0 AO 9 
         private void botao_0(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "0";
-        }
+        {entrada1.Text = entrada1.Text + "0";}
         private void botao_1(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "1";
-        }
+        {entrada1.Text = entrada1.Text + "1";}
         private void botao_2(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "2";
-        }
+        {entrada1.Text = entrada1.Text + "2";}
         private void botao_3(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "3";
-        }
+        {entrada1.Text = entrada1.Text + "3";}
         private void botao_4(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "4";
-        }
+        {entrada1.Text = entrada1.Text + "4";}
         private void botao_5(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "5";
-        }
+        {entrada1.Text = entrada1.Text + "5";}
         private void botao_6(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "6";
-        }
+        {entrada1.Text = entrada1.Text + "6";}
         private void botao_7(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "7";
-        }
+        {entrada1.Text = entrada1.Text + "7";}
         private void botao_8(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "8";
-        }
+        {entrada1.Text = entrada1.Text + "8";}
         private void botao_9(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + "9";
-        }
+        {entrada1.Text = entrada1.Text + "9";}
         //BOTAO DOS NUMEROS 0 AO 9
 
 
@@ -88,48 +69,52 @@ namespace Calculadora
             textvalor1.Text = null;
         }
         private void botao_calcular(object sender, EventArgs e)
-        {         
-            if (labelopr.Text == "+")
+        {   
+            if (valor2 > 0)
             {
-                valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
-                entrada1.Text = Convert.ToString(valor1 + valor2);
-                valor1 = 0;
-                valor2 = 0;
-                textvalor1.Text = null;
-                labelopr.Text = null;
+                switch (labelopr.Text)
+                {
+                    case "+":
+                        valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
+                        entrada1.Text = Convert.ToString(valor1 + valor2);
+                        valor1 = 0;
+                        valor2 = 0;
+                        textvalor1.Text = null;
+                        labelopr.Text = null;
+                        break;
+                    case "-":
+                        valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
+                        entrada1.Text = Convert.ToString(valor1 - valor2);
+                        valor1 = 0;
+                        valor2 = 0;
+                        textvalor1.Text = null;
+                        labelopr.Text = null;
+                        break;
+                    case "x":
+                        valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
+                        entrada1.Text = Convert.ToString(valor1 * valor2);
+                        valor1 = 0;
+                        valor2 = 0;
+                        textvalor1.Text = null;
+                        labelopr.Text = null;
+                        break;
+                    case "/":
+                        valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
+                        entrada1.Text = Convert.ToString(valor1 / valor2);
+                        valor1 = 0;
+                        valor2 = 0;
+                        textvalor1.Text = null;
+                        labelopr.Text = null;
+                        break;
+                    default:
+                        break;
+                }
             }
-            if (labelopr.Text == "-")
-            {
-                valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
-                entrada1.Text = Convert.ToString(valor1 - valor2);
-                valor1 = 0;
-                valor2 = 0;
-                textvalor1.Text = null;
-                labelopr.Text = null;
-            }
-            if (labelopr.Text == "x")
-            {
-                valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
-                entrada1.Text = Convert.ToString(valor1 * valor2);
-                valor1 = 0;
-                valor2 = 0;
-                textvalor1.Text = null;
-                labelopr.Text = null;
-            }
-            if (labelopr.Text == "/")
-            {
-                valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
-                entrada1.Text = Convert.ToString(valor1 / valor2);
-                valor1 = 0;
-                valor2 = 0;
-                textvalor1.Text = null;
-                labelopr.Text = null;
-            }
+            
         }
         //BOTOES PARARELOS
 
         //BOTOES DE OPERAÇÕES
-
         private void botao_menos(object sender, EventArgs e)
         {
             if (labelopr.Text != "")
@@ -186,9 +171,8 @@ namespace Calculadora
                 entrada1.Text = null;
                 labelopr.Text = "/";
             }          
-        }      
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {     
         }
+        //BOTOES DE OPERAÇÕES
+        
     }
 }

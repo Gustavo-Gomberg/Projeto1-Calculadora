@@ -174,68 +174,74 @@
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Location = new System.Drawing.Point(251, 41);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 45);
             this.button11.TabIndex = 11;
             this.button11.Text = "-";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.botao_menos);
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Location = new System.Drawing.Point(193, 41);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 45);
             this.button12.TabIndex = 12;
             this.button12.Text = "+";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.botao_mais);
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(251, 92);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 45);
             this.button13.TabIndex = 13;
             this.button13.Text = "/";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.botao_dividir);
             // 
             // button14
             // 
+            this.button14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(193, 92);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 45);
             this.button14.TabIndex = 14;
             this.button14.Text = "x";
-            this.button14.UseVisualStyleBackColor = true;
+            this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.botao_vezes);
             // 
             // button15
             // 
+            this.button15.BackColor = System.Drawing.SystemColors.Highlight;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.Location = new System.Drawing.Point(124, 209);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(50, 50);
             this.button15.TabIndex = 20;
             this.button15.Text = ".";
-            this.button15.UseVisualStyleBackColor = true;
+            this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.botao_ponto);
             // 
             // button18
             // 
+            this.button18.BackColor = System.Drawing.Color.Green;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.Location = new System.Drawing.Point(193, 153);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(103, 35);
             this.button18.TabIndex = 30;
             this.button18.Text = "=";
-            this.button18.UseVisualStyleBackColor = true;
+            this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.botao_calcular);
             // 
             // labelvalor2
@@ -248,24 +254,26 @@
             // 
             // button19
             // 
+            this.button19.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.Location = new System.Drawing.Point(193, 235);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(103, 24);
             this.button19.TabIndex = 40;
             this.button19.Text = "DELETAR";
-            this.button19.UseVisualStyleBackColor = true;
+            this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.botao_limpar);
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(193, 205);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(103, 24);
             this.button10.TabIndex = 41;
             this.button10.Text = "LIMPAR";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.botao_limpar);
             // 
             // textvalor1
@@ -276,7 +284,7 @@
             this.textvalor1.Location = new System.Drawing.Point(12, 8);
             this.textvalor1.Name = "textvalor1";
             this.textvalor1.ReadOnly = true;
-            this.textvalor1.Size = new System.Drawing.Size(139, 26);
+            this.textvalor1.Size = new System.Drawing.Size(130, 26);
             this.textvalor1.TabIndex = 42;
             this.textvalor1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -285,9 +293,9 @@
             this.entrada1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.entrada1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entrada1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.entrada1.Location = new System.Drawing.Point(171, 8);
+            this.entrada1.Location = new System.Drawing.Point(162, 8);
             this.entrada1.Name = "entrada1";
-            this.entrada1.Size = new System.Drawing.Size(125, 26);
+            this.entrada1.Size = new System.Drawing.Size(134, 26);
             this.entrada1.TabIndex = 0;
             this.entrada1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.entrada1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -296,11 +304,12 @@
             // 
             this.labelopr.AutoSize = true;
             this.labelopr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelopr.Location = new System.Drawing.Point(150, 11);
+            this.labelopr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelopr.Location = new System.Drawing.Point(143, 11);
             this.labelopr.Name = "labelopr";
             this.labelopr.Size = new System.Drawing.Size(0, 20);
             this.labelopr.TabIndex = 43;
-            this.labelopr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelopr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Calculadora
             // 
