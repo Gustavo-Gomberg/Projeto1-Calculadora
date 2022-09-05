@@ -24,7 +24,7 @@ namespace Calculadora
         private void textBox1_TextChanged(object sender, EventArgs e)
         {}
 
-        //\\ BOTAO DOS NUMEROS 0 AO 9 //\\
+        //BOTAO DOS NUMEROS 0 AO 9
         private void botao_0(object sender, EventArgs e)
         {entrada1.Text = entrada1.Text + "0";}
         private void botao_1(object sender, EventArgs e)
@@ -45,20 +45,15 @@ namespace Calculadora
         {entrada1.Text = entrada1.Text + "8";}
         private void botao_9(object sender, EventArgs e)
         {entrada1.Text = entrada1.Text + "9";}
-        //BOTAO DOS NUMEROS 0 AO 9
-
+        //BOTAO DOS NUMEROS 0 AO 9 
 
         //BOTOES PARARELOS
         private void botao_ponto(object sender, EventArgs e)
-        {
-            entrada1.Text = entrada1.Text + ".";
-        }
+        {entrada1.Text = entrada1.Text + ".";}
         private void botao_deletar(object sender, EventArgs e)
         {
             if (entrada1.Text.Length > 0)
-            {
-                entrada1.Text = entrada1.Text.Remove(entrada1.Text.Length - 1);
-            }    
+            {entrada1.Text = entrada1.Text.Remove(entrada1.Text.Length - 1);}    
         }
         private void botao_limpar(object sender, EventArgs e)
         {
@@ -69,8 +64,10 @@ namespace Calculadora
             textvalor1.Text = null;
         }
         private void botao_calcular(object sender, EventArgs e)
-        {   
-           switch (labelopr.Text)
+        {  
+           if (valor1 != 0)
+            {
+                switch (labelopr.Text)
                 {
                     case "+":
                         valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
@@ -107,7 +104,7 @@ namespace Calculadora
                     default:
                         break;
                 }
-            
+            } 
         }
         //BOTOES PARARELOS
 
@@ -123,7 +120,6 @@ namespace Calculadora
                 labelopr.Text = "-";
             }     
         }
-
         private void botao_mais(object sender, EventArgs e)
         {
             labelopr.Text = "+";
@@ -157,7 +153,6 @@ namespace Calculadora
                 labelopr.Text = "/";
             }          
         }
-        //BOTOES DE OPERAÇÕES
-        
+        //BOTOES DE OPERAÇÕES   
     }
 }
