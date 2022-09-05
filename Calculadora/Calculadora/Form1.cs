@@ -24,7 +24,7 @@ namespace Calculadora
         private void textBox1_TextChanged(object sender, EventArgs e)
         {}
 
-        //BOTAO DOS NUMEROS 0 AO 9 
+        //\\ BOTAO DOS NUMEROS 0 AO 9 //\\
         private void botao_0(object sender, EventArgs e)
         {entrada1.Text = entrada1.Text + "0";}
         private void botao_1(object sender, EventArgs e)
@@ -70,9 +70,7 @@ namespace Calculadora
         }
         private void botao_calcular(object sender, EventArgs e)
         {   
-            if (valor2 > 0)
-            {
-                switch (labelopr.Text)
+           switch (labelopr.Text)
                 {
                     case "+":
                         valor2 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
@@ -109,7 +107,6 @@ namespace Calculadora
                     default:
                         break;
                 }
-            }
             
         }
         //BOTOES PARARELOS
@@ -117,10 +114,7 @@ namespace Calculadora
         //BOTOES DE OPERAÇÕES
         private void botao_menos(object sender, EventArgs e)
         {
-            if (labelopr.Text != "")
-            {
-                labelopr.Text = "-";
-            }
+            labelopr.Text = "-";
             if (entrada1.Text != "")
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
@@ -132,10 +126,7 @@ namespace Calculadora
 
         private void botao_mais(object sender, EventArgs e)
         {
-            if (labelopr.Text != "")
-            {
-                labelopr.Text = "+";
-            }
+            labelopr.Text = "+";
             if (entrada1.Text != "") 
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
@@ -146,10 +137,7 @@ namespace Calculadora
         }
         private void botao_vezes(object sender, EventArgs e)
         {
-            if (labelopr.Text != "")
-            {
-                labelopr.Text = "x";
-            }
+            labelopr.Text = "x";
             if (entrada1.Text != "")
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
@@ -160,10 +148,7 @@ namespace Calculadora
         }
         private void botao_dividir(object sender, EventArgs e)
         {
-            if (labelopr.Text != "")
-            {
-                labelopr.Text = "/";
-            }
+            labelopr.Text = "/";
             if (entrada1.Text != "")
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
