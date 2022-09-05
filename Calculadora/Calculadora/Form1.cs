@@ -26,25 +26,25 @@ namespace Calculadora
 
         //BOTAO DOS NUMEROS 0 AO 9
         private void botao_0(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "0";}
+        {entrada1.Text += "0";}
         private void botao_1(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "1";}
+        {entrada1.Text += "1";}
         private void botao_2(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "2";}
+        {entrada1.Text += "2";}
         private void botao_3(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "3";}
+        {entrada1.Text += "3";}
         private void botao_4(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "4";}
+        {entrada1.Text += "4";}
         private void botao_5(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "5";}
+        {entrada1.Text += "5";}
         private void botao_6(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "6";}
+        {entrada1.Text += "6";}
         private void botao_7(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "7";}
+        {entrada1.Text += "7";}
         private void botao_8(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "8";}
+        {entrada1.Text += "8";}
         private void botao_9(object sender, EventArgs e)
-        {entrada1.Text = entrada1.Text + "9";}
+        {entrada1.Text += "9";}
         //BOTAO DOS NUMEROS 0 AO 9 
 
         //BOTOES PARARELOS
@@ -59,13 +59,13 @@ namespace Calculadora
         {
             valor1 = 0;
             valor2 = 0;
-            entrada1.Text = null;
+            entrada1.Text = "";
             labelopr.Text = null;
             textvalor1.Text = null;
         }
         private void botao_calcular(object sender, EventArgs e)
         {  
-           if (valor1 != 0)
+           if (valor1 != 0 && entrada1.Text != "")
             {
                 switch (labelopr.Text)
                 {
@@ -116,7 +116,7 @@ namespace Calculadora
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
                 textvalor1.Text = entrada1.Text;
-                entrada1.Text = null;
+                entrada1.Text = "";
                 labelopr.Text = "-";
             }     
         }
@@ -127,7 +127,7 @@ namespace Calculadora
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
                 textvalor1.Text = entrada1.Text;
-                entrada1.Text = null;
+                entrada1.Text = "";
                 labelopr.Text = "+";
             }
         }
@@ -138,7 +138,7 @@ namespace Calculadora
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
                 textvalor1.Text = entrada1.Text;
-                entrada1.Text = null;
+                entrada1.Text = "";
                 labelopr.Text = "x";
             }        
         }
@@ -149,7 +149,7 @@ namespace Calculadora
             {
                 valor1 = float.Parse(entrada1.Text, CultureInfo.InvariantCulture);
                 textvalor1.Text = entrada1.Text;
-                entrada1.Text = null;
+                entrada1.Text = "";
                 labelopr.Text = "/";
             }          
         }
