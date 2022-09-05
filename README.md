@@ -1,2 +1,2 @@
-# Projeto1 Calculadora
- Calculadora feita em C# Windows Forms
+# Projeto - 1 Calculadora
+ Calculadora feita em C# Windows Forms.
