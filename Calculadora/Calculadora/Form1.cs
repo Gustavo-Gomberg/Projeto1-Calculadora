@@ -111,9 +111,9 @@ namespace Calculadora
                         break;
                     case "√":
                         valor1 = Double.Parse(entrada1.Text, CultureInfo.InvariantCulture);
-                        textvalor1.Text = Convert.ToString(Math.Sqrt(valor1));
+                        entrada1.Text = Convert.ToString(Math.Sqrt(valor1));
                         valor1 = 0d;
-                        entrada1.Text = null;
+                        textvalor1.Text = null;
                         labelopr.Text = null;
                         break;
                     case "^":
