@@ -173,7 +173,6 @@ namespace Calculadora
                 labelopr.Text = "x";
             }        
         }
-
         private void botao_raiz(object sender, EventArgs e)
         {
             labelopr.Text = "√";
@@ -185,7 +184,6 @@ namespace Calculadora
                 labelopr.Text = "√";
             }
         }
-
         private void botao_elevar(object sender, EventArgs e)
         {
             labelopr.Text = "^";
@@ -197,7 +195,6 @@ namespace Calculadora
                 labelopr.Text = "^";
             }
         }
-
         private void botao_porcentagem(object sender, EventArgs e)
         {
             labelopr.Text = "%";
@@ -209,7 +206,6 @@ namespace Calculadora
                 labelopr.Text = "%";
             }
         }
-
         private void botao_dividir(object sender, EventArgs e)
         {
             labelopr.Text = "/";
